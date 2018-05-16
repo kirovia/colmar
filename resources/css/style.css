@@ -1,0 +1,56 @@
+/* Universal Styling */
+html {
+  font-size: 16px;
+  font-family: Helvetica;
+}
+.mobile {
+  display: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+/* Header */
+header {
+  height: 4rem;
+  color: #424242;
+  padding: 0.5rem 2rem;
+  justify-content: space-between;
+}
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header span {
+  color: #c1c1c1;
+}
+a {
+  text-decoration: none;
+  color: #424242;
+}
+header a:hover, header a:active {
+  opacity: 0.5;
+}
+li {
+  padding: 1rem;
+}
+header img {
+  height: 3rem;
+}
+/* Mobile Media Queries */
+@media only screen and (max-width: 760px) {
+/* Universal Mobile Styling */
+  .web {
+    display: none;
+  }
+  .mobile {
+    display: inherit;
+  }
+/* Mobile Header */
+  header {
+    justify-content: space-around;
+  }
+  header img {
+    height: inherit;
+  }
+}
