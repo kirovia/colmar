@@ -8,6 +8,10 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
 }
+h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
 a {
   text-decoration: none;
   color: #424242;
@@ -20,7 +24,6 @@ section:nth-child(odd) {
 }
 .flex {
   display: flex;
-  align-items: center;
 }
 .column {
   flex-direction: column;
@@ -32,6 +35,10 @@ header {
   color: #424242;
   padding: 0.5rem 2rem;
   justify-content: space-between;
+  align-items: center;
+}
+.headerleft {
+  align-items: center;
 }
 header img {
   height: 3rem;
@@ -56,6 +63,7 @@ header a:hover, header a:active {
 /* Start Section */
 .start {
   padding: 2rem 1.5rem;
+  align-items: center;
 }
 .start img {
   width: 60%;
@@ -85,10 +93,51 @@ header a:hover, header a:active {
   box-shadow: 5px 5px 5px slategray;
 }
 
+/*Information Section */
+.information {
+  padding: 2rem 0 2rem 1.5rem;
+}
+.informationleft {
+  width: 60%;
+  overflow: hidden;
+  margin-right: 1.5rem;
+}
+.informationleft img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.information p {
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+}
+.informationright {
+  width: 40%;
+}
+.inforow {
+  overflow: hidden;
+  padding: 1rem;
+  transition: all 0.25s ease;
+}
+.inforow:hover, .inforow:active {
+  background-color: #c1c1c1;
+  transform: scaleX(1.01);
+}
+.inforow img {
+  width: 35%;
+  height: 35%;
+}
+.info {
+  width: 65%;
+  padding: 1rem;
+}
+.info a {
+  color: blue;
+}
+
 /* Mobile Media Queries */
 @media only screen and (max-width: 760px) {
   /* Universal Mobile Styling */
-  .web {
+  .desktop {
     display: none;
   }
   .mobile {
@@ -111,5 +160,22 @@ header a:hover, header a:active {
   }
   .start .flex {
     padding: 1rem;
+  }
+  /* Mobile Information Section */
+  .information {
+    padding: 0 1rem 2rem 1rem;
+  }
+  .information .mobile {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .information .mobile img {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .information .mobile a {
+    color: blue;
   }
 }
