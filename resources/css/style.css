@@ -114,16 +114,17 @@ header a:hover, header a:active {
   width: 40%;
   overflow: hidden;
 }
-.inforow {
+.row {
+  /* These styles are also used for the rows in the Thesis Exhibit Section */
   overflow: hidden;
   padding: 1rem;
   transition: all 0.25s ease;
 }
-.inforow:hover {
+.row:hover {
   background-color: #c1c1c1;
   transform: scaleX(1.01);
 }
-.inforow img {
+.row img {
   width: 35%;
   height: 35%;
 }
@@ -168,8 +169,27 @@ header a:hover, header a:active {
   box-shadow: 3px 3px 10px #424242;
 }
 
-/*
-
+/* Thesis Exhibit Section */
+.thesis > .flex {
+  margin-top: 2rem;
+}
+.thesis h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.thesis p {
+  margin: 1.5rem 0 2rem 0;
+  font-size: 0.9rem;
+}
+.thesis video {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.thesisleft {
+  width: 60%;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
 /* Mobile Media Queries */
 @media only screen and (max-width: 760px) {
   /* Universal Mobile Styling */
@@ -259,5 +279,10 @@ header a:hover, header a:active {
     background-image: url("../images/course-marketing.jpg");
     background-size: cover;
     background-position: 50% 30%;
+  }
+  /* Mobile Thesis Exhibit Section */
+  .thesisleft {
+    padding: 0;
+    width: 100%;
   }
 }
