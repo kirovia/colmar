@@ -123,6 +123,7 @@ header a:hover, header a:active {
 .row:hover {
   background-color: #c1c1c1;
   transform: scaleX(1.01);
+  box-shadow: 1px 1px 5px #424242;
 }
 .row img {
   width: 35%;
@@ -184,6 +185,7 @@ header a:hover, header a:active {
 .thesis video {
   width: 100%;
   margin-bottom: 1.5rem;
+  border: 1px solid #424242;
 }
 .thesisleft {
   width: 60%;
@@ -221,11 +223,12 @@ footer {
     padding: 0;
     flex-direction: column;
   }
+  .start .flex {
+    margin: 0 auto;
+    padding: 1rem;
+  }
   .start img {
     width: 100%;
-  }
-  .start .flex {
-    padding: 1rem;
   }
   /* Mobile Information Section */
   .information {
@@ -239,10 +242,12 @@ footer {
   }
   .information .mobile img {
     width: 100%;
-    margin: 1rem 0;
+    margin: 4rem 0 1rem 0;
+    box-shadow: 5px 5px 10px #424242;
   }
   .information .mobile a {
     color: blue;
+    text-decoration: underline;
   }
   /* Mobile Courses Section */
   .courses h2{
@@ -251,7 +256,7 @@ footer {
   }
   .course {
     color: white;
-    width: 50%;
+    width: 70%;
     padding: 1rem;
     box-shadow: 3px 3px 10px #424242;
   }
@@ -264,21 +269,23 @@ footer {
   }
   .software {
     background-image: url("../images/course-software.jpg");
-    background-size: cover;
+    background-size: 150%;
+    background-position: bottom;
   }
   .art {
     background-image: url("../images/course-computer-art.jpg");
-    background-size: cover;
+    background-size: 200%;
+    background-position: top;
   }
   .design {
     background-image: url("../images/course-design.jpg");
-    background-size: cover;
+    background-size: 200%;
     background-position: center;
   }
   .data {
     background-image: url("../images/course-data.jpg");
-    background-size: cover;
-    background-position: 50% 60%;
+    background-size: 250%;
+    background-position: right;
   }
   .business {
     background-image: url("../images/course-business.jpg");
